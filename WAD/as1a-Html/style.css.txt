@@ -1,0 +1,59 @@
+/* Sidebar */
+#side {
+    width: 240px;
+    min-height: 100vh;
+    position: fixed;
+  }
+  
+  #main {
+    margin-left: 240px;
+    transition: all 0.3s;
+  }
+  
+  /* Toggle for small screens */
+  @media (max-width: 768px) {
+    #side {
+      display: none;
+      position: absolute;
+      z-index: 1000;
+    }
+    #main {
+      margin-left: 0;
+    }
+  }
+  
+  /* Sidebar links */
+  #side a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  #side a:hover {
+    background-color: #495057;
+    text-decoration: none;
+  }
+  
+  /* Cards */
+  .stat {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tables */
+  table {
+    font-size: 0.95rem;
+  }
+  
+  .card-header {
+    font-weight: bold;
+    background-color: #f8f9fa;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }

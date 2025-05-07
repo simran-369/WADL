@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AIT Pune - Mobile Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery & jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" data-theme="b">
+    <h1>AIT Pune</h1>
+    <h2 style="font-size: 14px;">Army Institute of Technology</h2>
+  </div>
+
+  <div data-role="content">
+    <h3>Welcome to AIT Pune</h3>
+    <p>India’s premier engineering college exclusively for children of army personnel.</p>
+    
+    <a href="#courses" data-role="button" data-icon="grid">Courses</a>
+    <a href="#departments" data-role="button" data-icon="bars">Departments</a>
+    <a href="#notice" data-role="button" data-icon="info">Notice Board</a>
+    <a href="#gallery" data-role="button" data-icon="camera">Gallery</a>
+    <a href="#admission" data-role="button" data-icon="edit">Admissions</a>
+    <a href="#feedback" data-role="button" data-icon="star">Feedback</a>
+    <a href="#contact" data-role="button" data-icon="phone">Contact Us</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed" data-theme="b">
+    <h4>© AIT Pune 2025</h4>
+  </div>
+</div>
+
+<!-- Courses -->
+<div data-role="page" id="courses">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>B.E. Courses</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><h2>Computer Engineering</h2><p>AI, ML, Web Dev</p></li>
+      <li><h2>Information Technology</h2><p>Cloud, Cybersecurity</p></li>
+      <li><h2>Electronics & Telecommunication</h2><p>VLSI, IoT</p></li>
+      <li><h2>Mechanical Engineering</h2><p>Robotics, CAD</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Departments -->
+<div data-role="page" id="departments">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>Departments</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><h2>Library</h2><p>Digital resources & journals</p></li>
+      <li><h2>Hostel</h2><p>Separate for boys & girls</p></li>
+      <li><h2>Placement Cell</h2><p>98% placement rate</p></li>
+      <li><h2>Sports & Clubs</h2><p>Technical & cultural clubs</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Notice Board -->
+<div data-role="page" id="notice">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>Notice Board</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search Notices...">
+      <li><h2>Mid-Sem Exam</h2><p>Starts from 12th Sept</p></li>
+      <li><h2>Hackathon</h2><p>Register by 10th Oct</p></li>
+      <li><h2>Convocation 2025</h2><p>Venue: Main Auditorium</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Gallery -->
+<div data-role="page" id="gallery">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>Campus Gallery</h1>
+  </div>
+  <div data-role="content">
+    <div class="gallery">
+      <img src="https://via.placeholder.com/150x100" alt="Campus">
+      <img src="https://via.placeholder.com/150x100" alt="Library">
+      <img src="https://via.placeholder.com/150x100" alt="Labs">
+    </div>
+  </div>
+</div>
+
+<!-- Admissions -->
+<div data-role="page" id="admission">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>Admission Info</h1>
+  </div>
+  <div data-role="content">
+    <p>Admissions are open to children of army personnel only through JEE Main.</p>
+    <ul>
+      <li>JEE Rank required</li>
+      <li>Apply through official site: <a href="https://www.aitpune.com" target="_blank">aitpune.com</a></li>
+      <li>Upload documents & pay fees online</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Feedback -->
+<div data-role="page" id="feedback">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>Feedback</h1>
+  </div>
+  <div data-role="content">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your email">
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Your feedback"></textarea>
+      <button type="submit" data-role="button" data-theme="b">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Contact -->
+<div data-role="page" id="contact">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-rel="back">Back</a>
+    <h1>Contact Us</h1>
+  </div>
+  <div data-role="content">
+    <p><strong>Address:</strong><br>Army Institute of Technology, Alandi Road, Pune – 411015</p>
+    <p><strong>Email:</strong> info@aitpune.edu.in</p>
+    <p><strong>Phone:</strong> +91-20-27157534</p>
+    <p><strong>Website:</strong> <a href="https://www.aitpune.com">www.aitpune.com</a></p>
+  </div>
+</div>
+
+</body>
+</html>
