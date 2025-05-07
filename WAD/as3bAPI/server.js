@@ -20,3 +20,6 @@ mongoose.connect(process.env.MONGODB_URI)
     });
   })
     .catch(err => console.log(err));
+//PORT=3000
+//MONGODB_URI=mongodb+srv://maniac_psycho13:123Aryan.@cluster0.wflrtqr.mongodb.net/edtech
+// .env file bnana
